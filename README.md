@@ -1,10 +1,10 @@
 # Outpatient Gaps: Data Quality & Exploratory Data Analysis (EDA) Report
 
-This project analyzes outpatient encounter data to identify operational gaps, access barriers, and care quality issues in a healthcare setting. Using Python (Pandas, Matplotlib, Seaborn, Plotly), SQL, and Tableau, we uncover actionable insights to improve patient access, reduce wait times, and enhance care continuity.
+This project analyzes outpatient encounter data to identify operational gaps, access barriers, and care quality issues in a healthcare setting. Using Python (Pandas, Matplotlib, Seaborn, Plotly), we uncover actionable insights to improve patient access, reduce wait times, and enhance care continuity.
 
 📊 **Dataset**: Mock outpatient encounter data (1000 post-dedup records) with fields like encounter date, wait time, no-show status, readmission flags, travel distance, residence type, income level, and payment outcomes.  
-🔗 **Code**: [Jupyter Notebook](notebooks/eda_outpatient.ipynb) |
-📈 **Visuals**: [Figures](figures/)  
+🔗 **Code**: [Jupyter Notebook](opd_eda.ipynb) |
+📈 **Visuals**: [Figures](Figures/)  
 
 ---
 
@@ -45,13 +45,13 @@ This project analyzes outpatient encounter data to identify operational gaps, ac
 ---
 
 ## Visual Summaries
-- **Wait Time Distribution**: [Histogram](figures/wait_time_hist.png) – Shows right-skewed wait times, with a long tail beyond 60 min.
-- **No-Show by Residence**: [Bar Chart](figures/no_show_by_residence.png) – Higher no-show rates in rural areas.
-- **Monthly Volume & No-Show**: [Line Plot](figures/monthly_volume_noshow.png) – Tracks seasonal patterns in encounters and no-shows.
-- **Wait by Department**: [Box Plot](figures/wait_by_department_box.png) – Identifies departments with excessive wait times.
-- **Readmission by Age**: [Bar Chart](figures/readmit_by_age.png) – Highlights infancy and older age groups at risk.
+- **Wait Time Distribution**: [Horizontal Bar Chart](Figures/wait_time_distribution.png) – Shows right-skewed wait times, with a long tail beyond 60 min.
+- **No-Show by Residence**: [Bar Chart](Figures/show_vs_no-show.png) – Higher no-show rates in rural areas.
+- **Monthly Volume & No-Show**: [Line Plot](Figures/monthly_volume_noshow.png) – Tracks seasonal patterns in encounters and no-shows.
+- **Wait by Department**: [Stacked Bar Chart](Figures/wait_by_department.png) – Identifies departments with excessive wait times.
+- **Readmission by Age**: [Grouped Bar Chart](Figures/readmit_by_age.png) – Highlights infancy and older age groups at risk.
 
-**How to Reproduce**: Run [eda_outpatient.ipynb](notebooks/eda_outpatient.ipynb) to generate plots using Pandas/Seaborn. Tableau dashboard available [here](tableau/dashboard.twbx).
+**How to Reproduce**: Run [outpatient_analysis](outpatient_analysis/opd_eda.ipynb) to generate plots using Pandas/Seaborn.
 
 ---
 
@@ -75,8 +75,3 @@ This project analyzes outpatient encounter data to identify operational gaps, ac
 
 ---
 
-## How to Run the Analysis
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/outpatient-gaps.git
-   cd outpatient-gaps
