@@ -1,6 +1,6 @@
 # Outpatient Gaps: Data Quality & Exploratory Data Analysis (EDA) Report
 
-This project analyzes outpatient encounter data to identify operational gaps, access barriers, and care quality issues in a healthcare setting. Using Python (Pandas, Matplotlib, Seaborn, Plotly), we uncover actionable insights to improve patient access, reduce wait times, and enhance care continuity.
+This project analyzes outpatient encounter data to identify operational gaps, access barriers, and care quality issues in a healthcare setting. Using Python (Pandas, Express, Plotly), we uncover actionable insights to improve patient access, reduce wait times, and enhance care continuity.
 
 📊 **Dataset**: Mock outpatient encounter data (1000 post-dedup records) with fields like encounter date, wait time, no-show status, readmission flags, travel distance, residence type, income level, and payment outcomes.  
 🔗 **Code**: [Jupyter Notebook](opd_eda.ipynb) |
@@ -37,10 +37,10 @@ This project analyzes outpatient encounter data to identify operational gaps, ac
 | Median Travel Distance     | 5.35 km      | Longer distances correlate with no-shows    |
 | No-Show Rate (Urban)       | 13.51%       | Lower than rural, but still significant     |
 | No-Show Rate (Rural)       | 18.85%       | Access barriers (transport, distance)       |
-| No-Show Rate (Low Income)  | 17.31%       | Financial barriers may drive no-shows       |
-| No-Show Rate (High Income) | 13.37%       | Better access but not immune to issues      |
 
-**Why It Matters**: Rural and low-income patients face disproportionate access barriers, requiring targeted interventions like transport support or telehealth.
+
+**Why It Matters**: 
+- Rural patients face disproportionate access barriers, requiring targeted interventions like transport support or telehealth.
 
 ---
 
@@ -51,7 +51,7 @@ This project analyzes outpatient encounter data to identify operational gaps, ac
 - **Wait by Department**: [Stacked Bar Chart](Figures/wait_by_department.png) – Identifies departments with excessive wait times.
 - **Readmission by Age**: [Grouped Bar Chart](Figures/readmit_by_age.png) – Highlights infancy and older age groups at risk.
 
-**How to Reproduce**: Run [outpatient_analysis](outpatient_analysis/opd_eda.ipynb) to generate plots using Pandas/Seaborn.
+**How to Reproduce**: Run [outpatient_analysis](outpatient_analysis/opd_eda.ipynb) to generate plots using Pandas/Plotly Express.
 
 ---
 
