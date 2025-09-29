@@ -7,11 +7,11 @@ These can be communicated to stakeholders through concise reports, visual dashbo
 Using Python (Pandas, Plotly Express) and SQLite, we uncover actionable insights to improve patient access, reduce wait times, and enhance care continuity
 
 
-📊 **Dataset**: [dataset](hospital_outpatient_raw.csv)
+📊 **Dataset**: [dataset](hospital_outpatient_raw.csv/)
 
 Mock outpatient encounter data (1000 post-dedup records) with fields like encounter date, wait time, no-show status, readmission flags, travel distance, residence type, income level, and payment outcomes.  
 
-🔗 **Code**: [Jupiter Notebook](opd_eda.ipynb) | [SQL Script](Sql_Script.sql)
+🔗 **Code**: [notebook](opd_eda.ipynb/) | [SqlScript](Sql_Script.sql/)
 
 📈 **Visuals**: [Figures](Figures/)  
 
