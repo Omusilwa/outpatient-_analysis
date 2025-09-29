@@ -11,7 +11,7 @@ Using Python (Pandas, Plotly Express) and SQLite, we uncover actionable insights
 
 Mock outpatient encounter data (1000 post-dedup records) with fields like encounter date, wait time, no-show status, readmission flags, travel distance, residence type, income level, and payment outcomes.  
 
-🔗 **Code**: [Jupiter Notebook](opd_eda.ipynb) | [SQL Script](Sql_Script)
+🔗 **Code**: [Jupiter Notebook](opd_eda.ipynb) | [SQL Script](Sql_Script.sql)
 
 📈 **Visuals**: [Figures](Figures/)  
 
